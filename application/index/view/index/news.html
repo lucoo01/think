@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>每日新闻</title>
+</head>
+<body>
+<ul>
+{volist name="data" id="vo"}
+<li>
+	<h2><a href="{$vo.url}">{$vo.title}</a></h2>
+	<p>{$vo.desc}</p>
+</li>
+{/volist}
+</ul>
+</body>
+</html>
